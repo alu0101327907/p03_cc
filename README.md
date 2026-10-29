@@ -3,33 +3,50 @@
 Implementación en **C++17**, con diseño orientado a objetos, de la función
 
 ## 1. Configurar (crea carpeta build/)
+
+```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+```
 
 ## 2. Compilar
+
+```bash
 cmake --build build -j
+```
 
 ## 3. Ejecutar el programa principal
+
+```bash
 ./build/potencia_pr -x 2 -y 10
+```
 
 ## 4. Ejecutar las pruebas automáticas
+
+```bash
 ctest --test-dir build --output-on-failure
+```
 
 ## 5. Uso general
 
+```bash
 ./build/potencia_pr -x <base> -y <exponente>
+```
 
 ## Ejemplos
 
+```bash
 ./build/potencia_pr -x 2 -y 10
 
 potencia(2, 10) = 1024
 Numero de llamadas a funciones: 6292
+```
 
 ## Ver la ayuda
 
+```bash
 ./build/potencia_pr -h
 ./build/potencia_pr --help
-
+```
 ## Manejo de errores
 
 ### Falta un parámetro
